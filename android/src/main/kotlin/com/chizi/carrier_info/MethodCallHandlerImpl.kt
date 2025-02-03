@@ -53,6 +53,9 @@ internal class MethodCallHandlerImpl(context: Context, activity: Activity?) : Me
     override fun onMethodCall(call: MethodCall, result: MethodChannel.Result) {
         Handler(Looper.getMainLooper()).post {
             when (call.method) {
+                "mobileNetworkCode" -> {
+                    mobileNetworkCode(result)
+                }
                 "getAndroidInfo" -> {
                     try {
                         getInfo(result)
@@ -68,6 +71,14 @@ internal class MethodCallHandlerImpl(context: Context, activity: Activity?) : Me
         }
     }
 
+    private fun mobileNetworkCode(result: MethodChannel.Result) {
+        val plmn = mDefaultTelephonyManager!!.simOperator
+        if (plmn != null && "" != plmn) {
+            result.success(plmn.substring(3))
+        } else {
+            result.error(E_NO_MOBILE_NETWORK, "No mobile network code","")
+        }
+    }
 
     private fun requestForSpecificPermission(i: Int) {
         ActivityCompat.requestPermissions(

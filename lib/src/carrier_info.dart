@@ -20,4 +20,8 @@ class CarrierInfo {
       await _channel.invokeMethod('getIosInfo'),
     );
   }
+
+  // The mobile network code (MNC) for the user’s cellular service provider.
+  static Future<String?> get mobileNetworkCode =>
+      _channel.invokeMethod('mobileNetworkCode');
 }
