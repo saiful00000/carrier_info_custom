@@ -29,12 +29,12 @@
     &quot;assignee&quot;: &quot;shaiful00000&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/saiful00000/carrier_info_custom.git&quot;,
-    &quot;accountId&quot;: &quot;5a8d65a5-9a57-4c3e-a3df-64348989de63&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/saiful00000/carrier_info_custom.git",
+    "accountId": "5a8d65a5-9a57-4c3e-a3df-64348989de63"
   }
-}</component>
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -104,7 +104,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738572975055</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix: android 10 app crash reason bypassed&#10;feat: mobileNetworkCode method reintroduces from previous version">
+      <option name="closed" value="true" />
+      <created>1738573530043</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1738573530043</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
